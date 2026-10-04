@@ -1,127 +1,228 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="Nh1ktm68fMmF5y6HNvOT">
-    <mxGraphModel dx="1324" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1324" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="lane1_t" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#f8fafc;strokeColor=#64748b;fontStyle=1;fontSize=13;fontColor=#0f172a;" value="Клієнт" vertex="1">
-          <mxGeometry height="230" width="1380" x="40" y="40" as="geometry" />
+        <mxCell id="p_client" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#f8fafc;strokeColor=#475569;fontStyle=1;fontSize=14;fontColor=#0f172a;" value="Клієнт" vertex="1">
+          <mxGeometry height="220" width="1800" x="40" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="lane2_t" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#f1f5f9;strokeColor=#64748b;fontStyle=1;fontSize=13;fontColor=#0f172a;" value="Система «ФінКит»" vertex="1">
-          <mxGeometry height="340" width="1380" x="40" y="270" as="geometry" />
+        <mxCell id="p_bank" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#f1f5f9;strokeColor=#475569;fontStyle=1;fontSize=14;fontColor=#0f172a;" value="Банк" vertex="1">
+          <mxGeometry height="460" width="1800" x="40" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="start2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=2;fontSize=11;fontStyle=1;" value="Потреба в&#xa;переказі" vertex="1">
-          <mxGeometry height="50" width="50" x="100" y="125" as="geometry" />
+        <mxCell id="l_sys" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=26;fillColor=#ffffff;strokeColor=#94a3b8;fontStyle=1;fontSize=12;fontColor=#1e293b;" value="Система" vertex="1">
+          <mxGeometry height="230" width="1770" x="70" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="task_tc1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Відкрити розділ&#xa;«Переказ коштів»&#xa;(GUI-40)" vertex="1">
-          <mxGeometry height="70" width="130" x="200" y="115" as="geometry" />
+        <mxCell id="l_op" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=26;fillColor=#f8fafc;strokeColor=#94a3b8;fontStyle=1;fontSize=12;fontColor=#1e293b;" value="Операціоніст" vertex="1">
+          <mxGeometry height="230" width="1770" x="70" y="510" as="geometry" />
         </mxCell>
-        <mxCell id="task_ts1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Відобразити форму&#xa;переказу (GUI-40)" vertex="1">
-          <mxGeometry height="70" width="130" x="200" y="360" as="geometry" />
+        <mxCell id="p_proc" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#e2e8f0;strokeColor=#64748b;fontStyle=1;fontSize=13;fontColor=#0f172a;" value="Процесинговий центр" vertex="1">
+          <mxGeometry height="120" width="1800" x="40" y="770" as="geometry" />
         </mxCell>
-        <mxCell id="task_tc2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Заповнити реквізити:&#xa;сума, рахунки&#xa;(F-70)" vertex="1">
-          <mxGeometry height="70" width="140" x="380" y="115" as="geometry" />
+        <mxCell id="tc_start" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=2;fontSize=11;fontStyle=1;" value="Потреба в&#xa;переказі" vertex="1">
+          <mxGeometry height="40" width="40" x="100" y="110" as="geometry" />
         </mxCell>
-        <mxCell id="data_t1" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;fontSize=10;" value="[Data]&#xa;Параметри" vertex="1">
-          <mxGeometry height="55" width="90" x="405" y="200" as="geometry" />
+        <mxCell id="tc_input" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Ввести суму та&#xa;реквізити" vertex="1">
+          <mxGeometry height="70" width="140" x="180" y="95" as="geometry" />
         </mxCell>
-        <mxCell id="task_ts2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Валідувати правила:&#xa;ліміт 50 000 грн&#xa;(BL-40)" vertex="1">
-          <mxGeometry height="70" width="140" x="380" y="360" as="geometry" />
+        <mxCell id="tc_data_param" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;fontSize=10;" value="[Data]&#xa;Параметри" vertex="1">
+          <mxGeometry height="50" width="70" x="215" y="185" as="geometry" />
         </mxCell>
-        <mxCell id="gw_xor_t" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=11;fontStyle=1;" value="X&#xa;Умови ок?" vertex="1">
-          <mxGeometry height="60" width="70" x="570" y="365" as="geometry" />
+        <mxCell id="tc_catch_res" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#2563eb;strokeWidth=2;fontSize=10;" value="Отримано&#xa;результат" vertex="1">
+          <mxGeometry height="40" width="40" x="1620" y="110" as="geometry" />
         </mxCell>
-        <mxCell id="task_err_t" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#fee2e2;strokeColor=#ef4444;strokeWidth=2;fontSize=11;" value="Показати помилку&#xa;ліміту/балансу (GUI-50)" vertex="1">
-          <mxGeometry height="60" width="130" x="540" y="480" as="geometry" />
+        <mxCell id="tc_icon_res" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#2563eb;" value="✉" vertex="1">
+          <mxGeometry height="30" width="30" x="1625" y="115" as="geometry" />
         </mxCell>
-        <mxCell id="gw_and1" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2;fontSize=11;fontStyle=1;" value="+&#xa;Паралельно" vertex="1">
-          <mxGeometry height="60" width="70" x="690" y="365" as="geometry" />
+        <mxCell id="tc_end_done" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=4;fontSize=10;fontStyle=1;" value="Процес&#xa;завершено" vertex="1">
+          <mxGeometry height="40" width="40" x="1710" y="110" as="geometry" />
         </mxCell>
-        <mxCell id="task_wdr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Списати з джерела&#xa;AccountLedger.withdraw&#xa;(BL-70)" vertex="1">
-          <mxGeometry height="60" width="150" x="800" y="305" as="geometry" />
+        <mxCell id="ts_start_msg" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#2563eb;strokeWidth=2;fontSize=10;" value="Отримано&#xa;запит" vertex="1">
+          <mxGeometry height="40" width="40" x="230" y="365" as="geometry" />
         </mxCell>
-        <mxCell id="task_dep" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Зарахувати отримувачу&#xa;AccountLedger.deposit&#xa;(BL-70)" vertex="1">
-          <mxGeometry height="60" width="150" x="800" y="420" as="geometry" />
+        <mxCell id="ts_icon_env" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#2563eb;" value="✉" vertex="1">
+          <mxGeometry height="30" width="30" x="235" y="370" as="geometry" />
         </mxCell>
-        <mxCell id="gw_and2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2;fontSize=11;fontStyle=1;" value="+&#xa;Злиття" vertex="1">
-          <mxGeometry height="60" width="70" x="990" y="365" as="geometry" />
+        <mxCell id="ts_task_fmt" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Перевірити формат&#xa;реквізитів" vertex="1">
+          <mxGeometry height="70" width="140" x="310" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="task_rcpt" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=2;fontSize=11;" value="Сформувати квитанцію&#xa;«Переказ виконано»&#xa;(F-70)" vertex="1">
-          <mxGeometry height="70" width="140" x="1100" y="360" as="geometry" />
+        <mxCell id="ts_gw_fmt" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=10;fontStyle=1;" value="X&#xa;Формат ок?" vertex="1">
+          <mxGeometry height="60" width="60" x="480" y="355" as="geometry" />
         </mxCell>
-        <mxCell id="data_rcpt" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;fontSize=10;" value="[Data]&#xa;Ел. квитанція" vertex="1">
-          <mxGeometry height="55" width="90" x="1125" y="470" as="geometry" />
+        <mxCell id="ts_task_fmterr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#fee2e2;strokeColor=#ef4444;strokeWidth=2;fontSize=10;" value="Сформувати помилку&#xa;формату" vertex="1">
+          <mxGeometry height="55" width="130" x="445" y="440" as="geometry" />
         </mxCell>
-        <mxCell id="end_t" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=4;fontSize=10;fontStyle=1;" value="Переказ&#xa;виконано" vertex="1">
-          <mxGeometry height="50" width="50" x="1290" y="370" as="geometry" />
+        <mxCell id="ts_end_fmtrej" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fee2e2;strokeColor=#ef4444;strokeWidth=4;fontSize=9;fontStyle=1;" value="Відхилено&#xa;системою" vertex="1">
+          <mxGeometry height="40" width="40" x="600" y="447" as="geometry" />
         </mxCell>
-        <mxCell id="te1" edge="1" parent="1" source="start2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="task_tc1">
+        <mxCell id="ts_task_limit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Перевірити баланс&#xa;і денний ліміт" vertex="1">
+          <mxGeometry height="70" width="140" x="580" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ts_gw_limit" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=10;fontStyle=1;" value="X&#xa;Перевищує&#xa;ліміт?" vertex="1">
+          <mxGeometry height="60" width="70" x="750" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="top_task_manual" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Перевірити переказ&#xa;вручну" vertex="1">
+          <mxGeometry height="70" width="140" x="750" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="top_gw_dec" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=10;fontStyle=1;" value="X&#xa;Схвалено?" vertex="1">
+          <mxGeometry height="60" width="60" x="930" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="top_task_rej" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#fee2e2;strokeColor=#ef4444;strokeWidth=2;fontSize=10;" value="Сформувати&#xa;відмову" vertex="1">
+          <mxGeometry height="50" width="120" x="900" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="top_end_rej" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fee2e2;strokeColor=#ef4444;strokeWidth=4;fontSize=9;fontStyle=1;" value="Відхилено&#xa;операціоністом" vertex="1">
+          <mxGeometry height="40" width="40" x="1050" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="ts_gw_split" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2;fontSize=10;fontStyle=1;" value="+&#xa;Транзакція" vertex="1">
+          <mxGeometry height="60" width="60" x="1050" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="ts_task_debit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Списати з&#xa;джерела" vertex="1">
+          <mxGeometry height="55" width="130" x="1150" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ts_task_credit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Зарахувати&#xa;одержувачу" vertex="1">
+          <mxGeometry height="55" width="130" x="1150" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="ts_gw_join" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2;fontSize=10;fontStyle=1;" value="+&#xa;Злиття" vertex="1">
+          <mxGeometry height="60" width="60" x="1320" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="ts_task_hist" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#ffffff;strokeColor=#334155;strokeWidth=2;fontSize=11;" value="Записати операції&#xa;в історію" vertex="1">
+          <mxGeometry height="70" width="130" x="1410" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ts_store_db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#e0e7ff;strokeColor=#6366f1;strokeWidth=2;fontSize=10;fontStyle=1;" value="Історія /&#xa;БД" vertex="1">
+          <mxGeometry height="50" width="60" x="1445" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ts_task_succ" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=2;fontSize=11;" value="Повідомити&#xa;про успіх" vertex="1">
+          <mxGeometry height="70" width="130" x="1570" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ts_end_done" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=4;fontSize=10;fontStyle=1;" value="Переказ&#xa;виконано" vertex="1">
+          <mxGeometry height="40" width="40" x="1730" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="tseq1" edge="1" parent="1" source="tc_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="tc_input">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te2" edge="1" parent="1" source="task_tc1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#2563eb;fontSize=10;" target="task_ts1" value="Запит форми">
+        <mxCell id="tseq_client_wait" edge="1" parent="1" source="tc_input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="tc_catch_res">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te3" edge="1" parent="1" source="task_ts1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#2563eb;fontSize=10;" target="task_tc2" value="Форма">
+        <mxCell id="tassoc1" edge="1" parent="1" source="tc_input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=2 2;endArrow=none;startArrow=none;strokeColor=#64748b;" target="tc_data_param">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te4" edge="1" parent="1" source="task_tc2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#2563eb;fontSize=10;" target="task_ts2" value="Дані платежу">
+        <mxCell id="tmsg1" edge="1" parent="1" source="tc_input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#2563eb;fontSize=10;fontColor=#1e40af;" target="ts_start_msg" value="Запит">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te_data" edge="1" parent="1" source="task_tc2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=2 2;endArrow=none;strokeColor=#64748b;" target="data_t1">
+        <mxCell id="tseq2" edge="1" parent="1" source="ts_start_msg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="ts_task_fmt">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te5" edge="1" parent="1" source="task_ts2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="gw_xor_t">
+        <mxCell id="tseq3" edge="1" parent="1" source="ts_task_fmt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="ts_gw_fmt">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te6" edge="1" parent="1" source="gw_xor_t" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#ef4444;fontSize=11;fontColor=#ef4444;" target="task_err_t" value="[Ні]">
+        <mxCell id="tseq_fmt_no" edge="1" parent="1" source="ts_gw_fmt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#ef4444;fontSize=10;fontColor=#ef4444;" target="ts_task_fmterr" value="[Ні]">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te7" edge="1" parent="1" source="task_err_t" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#ef4444;fontSize=10;" target="task_tc2" value="Помилка">
+        <mxCell id="tseq_fmt_end" edge="1" parent="1" source="ts_task_fmterr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="ts_end_fmtrej">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmsg_fmterr" edge="1" parent="1" source="ts_task_fmterr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#ef4444;fontSize=9;fontColor=#b91c1c;" target="tc_catch_res" value="Помилка формату">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="605" y="240" />
-              <mxPoint x="490" y="240" />
+              <mxPoint x="510" y="240" />
+              <mxPoint x="1640" y="240" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="te8" edge="1" parent="1" source="gw_xor_t" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;fontSize=11;" target="gw_and1" value="[Так]">
+        <mxCell id="tseq_fmt_yes" edge="1" parent="1" source="ts_gw_fmt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#16a34a;fontSize=10;fontColor=#15803d;" target="ts_task_limit" value="[Так]">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te9" edge="1" parent="1" source="gw_and1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#2563eb;" target="task_wdr">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="725" y="335" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="te10" edge="1" parent="1" source="gw_and1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#2563eb;" target="task_dep">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="725" y="450" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="te11" edge="1" parent="1" source="task_wdr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#2563eb;" target="gw_and2">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1025" y="335" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="te12" edge="1" parent="1" source="task_dep" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#2563eb;" target="gw_and2">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1025" y="450" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="te13" edge="1" parent="1" source="gw_and2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="task_rcpt">
+        <mxCell id="tseq4" edge="1" parent="1" source="ts_task_limit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="ts_gw_limit">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te_rcpt" edge="1" parent="1" source="task_rcpt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=2 2;endArrow=none;strokeColor=#64748b;" target="data_rcpt">
+        <mxCell id="tseq_lim_yes" edge="1" parent="1" source="ts_gw_limit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#d97706;fontSize=10;fontColor=#b45309;" target="top_task_manual" value="[Так]">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="te14" edge="1" parent="1" source="task_rcpt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="end_t">
+        <mxCell id="tseq_lim_no" edge="1" parent="1" source="ts_gw_limit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#16a34a;fontSize=10;fontColor=#15803d;" target="ts_gw_split" value="[Ні]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tseq_op1" edge="1" parent="1" source="top_task_manual" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="top_gw_dec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tseq_op_no" edge="1" parent="1" source="top_gw_dec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#ef4444;fontSize=10;fontColor=#ef4444;" target="top_task_rej" value="[Ні]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tseq_op_end" edge="1" parent="1" source="top_task_rej" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="top_end_rej">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmsg_oprej" edge="1" parent="1" source="top_task_rej" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#ef4444;fontSize=9;fontColor=#b91c1c;" target="tc_catch_res" value="Відмова">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="250" />
+              <mxPoint x="1640" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tseq_op_yes" edge="1" parent="1" source="top_gw_dec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#16a34a;fontSize=10;fontColor=#15803d;" target="ts_gw_split" value="[Так]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tseq_sp1" edge="1" parent="1" source="ts_gw_split" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#2563eb;" target="ts_task_debit">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="337" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tseq_sp2" edge="1" parent="1" source="ts_gw_split" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#2563eb;" target="ts_task_credit">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="442" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tmsg_proc1" edge="1" parent="1" source="ts_task_debit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#475569;fontSize=9;" target="p_proc" value="Списання">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1215" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tmsg_proc2" edge="1" parent="1" source="ts_task_credit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#475569;fontSize=9;" target="p_proc" value="Зарахування">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tseq_jn1" edge="1" parent="1" source="ts_task_debit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#2563eb;" target="ts_gw_join">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="337" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tseq_jn2" edge="1" parent="1" source="ts_task_credit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#2563eb;" target="ts_gw_join">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="442" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tseq5" edge="1" parent="1" source="ts_gw_join" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="ts_task_hist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tassoc2" edge="1" parent="1" source="ts_task_hist" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=2 2;endArrow=none;strokeColor=#64748b;" target="ts_store_db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tseq6" edge="1" parent="1" source="ts_task_hist" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="ts_task_succ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tseq7" edge="1" parent="1" source="ts_task_succ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="ts_end_done">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmsg_succ" edge="1" parent="1" source="ts_task_succ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 6;startArrow=oval;startFill=0;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#16a34a;fontSize=10;fontColor=#15803d;" target="tc_catch_res" value="Успіх">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tseq_cend" edge="1" parent="1" source="tc_catch_res" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#334155;" target="tc_end_done">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
