@@ -3,7 +3,7 @@
 **Команда:** Група D  
 **Продукт:** П2 «ФінКит» (`finkit`) — онлайн-банкінг для фізичних осіб  
 **Дата планування:** 15.10.2026  
-**Репозиторій:** [https://github.com/1ffmama/FinKit](https://www.google.com/search?q=https%3A%2F%2Fgithub.com%2F0ffmama%2FFinKit)
+**Репозиторій:** [https://github.com/0ffmama/FinKit](https://www.google.com/search?q=https%3A%2F%2Fgithub.com%2F0ffmama%2FFinKit)
 
 ## 1. Розподіл ролей на Спринт 2 (згідно з ротацією у `docs/team/charter.md`)
 

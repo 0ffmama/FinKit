@@ -1,10 +1,10 @@
 # Реєстр дефектів вимог до програмного продукту «ФінКит» (SRS версії 1.0)
 
-**Продукт:** П2 «ФінКит» (`finkit`) — онлайн-банкінг для фізичних осіб
-**Команда (Група D):** Фомін Т. В. (КТ/СМ), Бугай Д. С. (ТА), Гонтар М. П. (ІТ)
-**Спринт:** Спринт 2 «Аудит вимог і стратегія тестування»
-**Дата аудиту:** 18.10.2026
-**Посилання на Google Таблицю командного аудиту:** [Аудит вимог (Google Sheets)](https://www.google.com/search?q=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1GG0TmPGvUMXiHqs6riyn81gEejWyIBqWZXw-kZFv1Ic%2Fedit%3Fusp%3Dsharing)
+**Продукт:** П2 «ФінКит» (`finkit`) — онлайн-банкінг для фізичних осіб  
+**Команда (Група D):** Фомін Т. В. (КТ/СМ), Бугай Д. С. (ТА), Гонтар М. П. (ІТ)  
+**Спринт:** Спринт 2 «Аудит вимог і стратегія тестування»  
+**Дата аудиту:** 18.10.2026  
+**Посилання на Google Таблицю командного аудиту:** [Аудит вимог (Google Sheets)](https://www.google.com/search?q=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1GG0TmPGvUMXiHqs6riyn81gEejWyIBqWZXw-kZFv1Ic%2Fedit%3Fusp%3Dsharing)  
 **Репозиторій команди:** [https://github.com/0ffmama/FinKit](https://www.google.com/search?q=https%3A%2F%2Fgithub.com%2F0ffmama%2FFinKit)
 
 ## 1. Матриця розподілу розділів `SRS_02_ФінКит` (подвійний незалежний аудит)
