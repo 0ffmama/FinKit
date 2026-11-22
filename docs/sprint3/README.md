@@ -16,7 +16,7 @@
 
 ## 2. Структура артефактів Спринта 3 у папці `docs/sprint3/`
 
-* [test-cases.xlsx](./test-cases.xlsx) — набір із 38 тест-кейсів (аркуші Test cases, Coverage, Review), журнал виконання Run 1, Environment і Test data.
+* [test-cases.xlsx](docs/sprint3/test-cases.md) — набір із 38 тест-кейсів (аркуші Test cases, Coverage, Review), журнал виконання Run 1, Environment і Test data.
 * [task-board.md](./task-board.md) — таблиця розподілу задач Спринта 3 (Шаблон 2).
 * [attachments/](./attachments/) — скріншоти до звітів про дефекти (`BUG-NN-k.png`).
 * [GitHub Issues](https://github.com/0ffmama/FinKit/issues) — звіти про дефекти BUG-01…BUG-13.
