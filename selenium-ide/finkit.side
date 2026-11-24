@@ -1,0 +1,445 @@
+{
+  "id": "b62936cb-d27d-46b1-b07a-4b6ccf2c7c50",
+  "version": "2.0",
+  "name": "finkit",
+  "url": "https://parabank.parasoft.com",
+  "tests": [
+    {
+      "id": "9046be80-58c2-4926-9c1c-b29a270dbca3",
+      "name": "TC-005 login",
+      "commands": [
+        {
+          "id": "60cf579f-1f87-477f-9277-7665c15f1e5e",
+          "comment": "унікальний логін",
+          "command": "executeScript",
+          "target": "return 'gdide' + Date.now()",
+          "targets": [],
+          "value": "user"
+        },
+        {
+          "id": "6807a7b1-bd50-4e6c-ab9a-5e1d44891d4f",
+          "comment": "",
+          "command": "open",
+          "target": "/parabank/register.htm",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "946defa6-1c73-4267-b142-12e708850cb8",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=customer.firstName",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "c1274a85-10d1-4bc6-a759-39496c370c05",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.firstName",
+          "targets": [],
+          "value": "Andrii"
+        },
+        {
+          "id": "d403179e-96bf-452d-9248-1c6cad8fcb3b",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.lastName",
+          "targets": [],
+          "value": "Testenko"
+        },
+        {
+          "id": "eb7f6f7d-0610-42c6-a0db-65de38f8a54b",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.address.street",
+          "targets": [],
+          "value": "Testova 10"
+        },
+        {
+          "id": "534b0d70-3a30-4035-8445-3cdfa08bd1f4",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.address.city",
+          "targets": [],
+          "value": "Dnipro"
+        },
+        {
+          "id": "a4fc3a67-c651-42f8-8730-4e5999c7fa5d",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.address.state",
+          "targets": [],
+          "value": "Dnipro"
+        },
+        {
+          "id": "0cf92f84-5640-42a8-983e-cda5297c8fad",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.address.zipCode",
+          "targets": [],
+          "value": "49000"
+        },
+        {
+          "id": "3f54357b-56b5-4880-8002-87f9e6337841",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.phoneNumber",
+          "targets": [],
+          "value": "380001234567"
+        },
+        {
+          "id": "350845a9-6dc5-4a0b-8afb-fea8a89f04d6",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.ssn",
+          "targets": [],
+          "value": "1234567999"
+        },
+        {
+          "id": "17b3b91c-5e21-4a33-be17-9079cf19de85",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.username",
+          "targets": [],
+          "value": "${user}"
+        },
+        {
+          "id": "0f7ba05f-c729-4b13-b358-f5319f527d6d",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.password",
+          "targets": [],
+          "value": "TestPass2026!"
+        },
+        {
+          "id": "8d8c07b7-8fd7-4c50-94ae-68ec485cb3ad",
+          "comment": "",
+          "command": "type",
+          "target": "id=repeatedPassword",
+          "targets": [],
+          "value": "TestPass2026!"
+        },
+        {
+          "id": "7c8bd2e6-92fc-4446-b01e-f97b5f4ef61e",
+          "comment": "",
+          "command": "click",
+          "target": "css=input[value='Register']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1e960b6c-4bb3-4413-8103-b1ccc706949d",
+          "comment": "",
+          "command": "waitForText",
+          "target": "css=#rightPanel h1.title",
+          "targets": [],
+          "value": "Welcome ${user}"
+        },
+        {
+          "id": "c4e4ab28-1c6d-42a0-a2b4-66d4ae457d89",
+          "comment": "",
+          "command": "click",
+          "target": "css=a[href*='logout.htm']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3b307a5b-f726-42d1-91c3-298bc7c9370b",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "name=username",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "9dc85334-b064-42e6-94f8-337a25ba50de",
+          "comment": "",
+          "command": "type",
+          "target": "name=username",
+          "targets": [],
+          "value": "${user}"
+        },
+        {
+          "id": "d90ed263-732c-45be-8ddf-6ec5cca131e0",
+          "comment": "",
+          "command": "type",
+          "target": "name=password",
+          "targets": [],
+          "value": "TestPass2026!"
+        },
+        {
+          "id": "4678ec7e-1034-43bb-a38f-7aafa81caca9",
+          "comment": "",
+          "command": "click",
+          "target": "css=input[value='Log In']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "752fccb7-6de8-4b82-b384-fe59f82d9674",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#rightPanel h1.title",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "e8222594-735c-476a-892e-d606254e9f6a",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=#rightPanel h1.title",
+          "targets": [],
+          "value": "Accounts Overview"
+        },
+        {
+          "id": "a4ec3635-6030-4e15-aedf-9e94c28d0fe6",
+          "comment": "",
+          "command": "verifyText",
+          "target": "css=#leftPanel p.smallText",
+          "targets": [],
+          "value": "Welcome Andrii Testenko"
+        },
+        {
+          "id": "f24bfe43-0b74-4b1f-af2a-784ec22170c6",
+          "comment": "",
+          "command": "verifyElementPresent",
+          "target": "css=a[href*='logout.htm']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dad99f03-d7d3-4e95-862d-c071e10f45c3",
+          "comment": "",
+          "command": "click",
+          "target": "css=a[href*='logout.htm']",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "3e727ec8-301a-475c-a480-5db058fadc6b",
+      "name": "TC-006 wrong password",
+      "commands": [
+        {
+          "id": "e1429913-fcf0-4650-8854-39836453490e",
+          "comment": "унікальний логін",
+          "command": "executeScript",
+          "target": "return 'gdide' + Date.now()",
+          "targets": [],
+          "value": "user"
+        },
+        {
+          "id": "647808fa-8c45-4c16-a43b-fecc5e954c1d",
+          "comment": "",
+          "command": "open",
+          "target": "/parabank/register.htm",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fdc07d32-03be-45db-8a55-336f1eff9ead",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=customer.firstName",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "821d985b-3110-41aa-bbad-2b9f765f402f",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.firstName",
+          "targets": [],
+          "value": "Andrii"
+        },
+        {
+          "id": "d020db6a-7ec2-4115-beac-a0a72a30c55d",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.lastName",
+          "targets": [],
+          "value": "Testenko"
+        },
+        {
+          "id": "77a47f68-f1bc-46ba-8cea-f0e1d07f4e78",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.address.street",
+          "targets": [],
+          "value": "Testova 10"
+        },
+        {
+          "id": "88e2a6d4-1209-408c-a7cc-402e49ad7e30",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.address.city",
+          "targets": [],
+          "value": "Dnipro"
+        },
+        {
+          "id": "2cafd9d7-c34e-4d9c-9a9c-df84c2283b78",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.address.state",
+          "targets": [],
+          "value": "Dnipro"
+        },
+        {
+          "id": "87502b19-8ac6-49b3-82c7-f23818158545",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.address.zipCode",
+          "targets": [],
+          "value": "49000"
+        },
+        {
+          "id": "0baa27d7-ce0d-40d0-9f91-8c8323b3f281",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.phoneNumber",
+          "targets": [],
+          "value": "380001234567"
+        },
+        {
+          "id": "6777d721-415a-4cd4-879d-b7cfada56a43",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.ssn",
+          "targets": [],
+          "value": "1234567999"
+        },
+        {
+          "id": "8135ad16-f40e-438d-b25b-bae90b98c051",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.username",
+          "targets": [],
+          "value": "${user}"
+        },
+        {
+          "id": "2f49c768-48c2-4e1e-a389-b00f63b9e49d",
+          "comment": "",
+          "command": "type",
+          "target": "id=customer.password",
+          "targets": [],
+          "value": "TestPass2026!"
+        },
+        {
+          "id": "50332a51-e7e1-4da8-9eca-81c239a2cf3a",
+          "comment": "",
+          "command": "type",
+          "target": "id=repeatedPassword",
+          "targets": [],
+          "value": "TestPass2026!"
+        },
+        {
+          "id": "b275d881-7bf7-4f48-8a36-e63bbfbc9dae",
+          "comment": "",
+          "command": "click",
+          "target": "css=input[value='Register']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "48408fd7-4c69-4860-a182-19eac0e32f49",
+          "comment": "",
+          "command": "waitForText",
+          "target": "css=#rightPanel h1.title",
+          "targets": [],
+          "value": "Welcome ${user}"
+        },
+        {
+          "id": "e47801ec-0eb6-4085-bfa8-5211b2f98424",
+          "comment": "",
+          "command": "click",
+          "target": "css=a[href*='logout.htm']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "067e6c53-8762-409f-be90-3ea4aa26f6ca",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "name=username",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "47a1e205-6c70-4c3b-b164-38e6c4295f74",
+          "comment": "",
+          "command": "type",
+          "target": "name=username",
+          "targets": [],
+          "value": "${user}"
+        },
+        {
+          "id": "e0f3d3da-4a56-47ef-b056-c9ddffbc2e65",
+          "comment": "",
+          "command": "type",
+          "target": "name=password",
+          "targets": [],
+          "value": "Wrong#999"
+        },
+        {
+          "id": "22c0fb4c-23ef-4fc1-af77-31ec684f4223",
+          "comment": "",
+          "command": "click",
+          "target": "css=input[value='Log In']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b467ec11-841b-42bf-9b64-f68e3d5eccd9",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=#rightPanel p.error",
+          "targets": [],
+          "value": "15000"
+        },
+        {
+          "id": "777c3efb-a1c3-4e55-ae48-de0d289408c8",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "css=#rightPanel p.error",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9958a821-e22d-4fb6-8a20-3221348c24de",
+          "comment": "",
+          "command": "verifyText",
+          "target": "css=#rightPanel p.error",
+          "targets": [],
+          "value": "The username and password could not be verified."
+        },
+        {
+          "id": "32bfa7b3-2244-4dc4-ba23-fa4654307c33",
+          "comment": "",
+          "command": "verifyElementNotPresent",
+          "target": "css=a[href*='logout.htm']",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "7c26e82e-f696-4a88-a8de-160fd7908c08",
+      "name": "Вхід клієнта",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "9046be80-58c2-4926-9c1c-b29a270dbca3",
+        "3e727ec8-301a-475c-a480-5db058fadc6b"
+      ]
+    }
+  ],
+  "urls": [
+    "https://parabank.parasoft.com/"
+  ],
+  "plugins": []
+}
