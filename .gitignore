@@ -1,0 +1,13 @@
+# Збірка Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# macOS
+.DS_Store
+
+# Локальні архіви, рев'ю і чернетки — не для репозиторію
+TEMP/
