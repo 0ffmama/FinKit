@@ -34,7 +34,7 @@ src/main/java/ua/kpi/tzyapz/finkit/       модуль v1: LoanCalculator, Trans
 src/test/java/ua/kpi/tzyapz/finkit/       юніт-тести: по класу на клас модуля
 src/test/java/ua/kpi/tzyapz/finkit/ui/    WebDriver-тести (тег ui)
 selenium-ide/                             проєкт Selenium IDE (*.side) і експорт у Java (export/, не збирається)
-docs/sprint1 … sprint5/                   досьє якості за спринтами
+docs/sprint1 … sprint4/                   досьє якості за спринтами
 ```
 
 ## 4. Тести та автори

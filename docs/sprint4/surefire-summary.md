@@ -1,7 +1,7 @@
 # Протокол запуску автотестів — Спринт 4 (модуль v1)
 
 **Дата:** 24.11.2026 · **Виконавець:** Фомін Т. В. (ІТ) · **Середовище:** Arch Linux, OpenJDK 21 (`release 17`), Maven 3.10, Chromium 156 (headless)
-**Команда:** `mvn clean test -DexcludedGroups=none` · **Повні звіти:** [docs/sprint5/surefire-v1/](../sprint5/surefire-v1/) (база «до» для регресії Спринта 5)
+**Команда:** `mvn clean test -DexcludedGroups=none` · **Повні звіти:** `target/surefire-reports/` після запуску
 
 ## Підсумок
 ```
